@@ -31,10 +31,10 @@ class BaseProvider:
         raise NotImplementedError
 
     def _get(self, url: str) -> BeautifulSoup:
+        """Fetch URL, falling back to Playwright if requests is blocked."""
         import time
         session = requests.Session()
         session.headers.update(HEADERS)
-        # Warm up with a HEAD request to get cookies first
         try:
             from urllib.parse import urlparse
             origin = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
@@ -43,15 +43,38 @@ class BaseProvider:
         except Exception:
             pass
 
-        for attempt in range(3):
+        for attempt in range(2):
             resp = session.get(url, timeout=20)
-            if resp.status_code == 403 and attempt < 2:
-                time.sleep(4 + attempt * 3)
+            if resp.status_code in (403, 429, 503) and attempt < 1:
+                time.sleep(4)
                 continue
+            if resp.status_code in (403, 429, 503):
+                logger.info(f"requests blocked ({resp.status_code}), trying playwright for {url}")
+                return self._get_playwright(url)
             resp.raise_for_status()
             return BeautifulSoup(resp.text, "lxml")
-        resp.raise_for_status()
-        return BeautifulSoup(resp.text, "lxml")
+        return self._get_playwright(url)
+
+    def _get_playwright(self, url: str) -> BeautifulSoup:
+        """Fetch via headless Chromium — bypasses JS-based bot detection."""
+        try:
+            from playwright.sync_api import sync_playwright
+        except ImportError:
+            raise RuntimeError("Playwright not available and requests was blocked")
+
+        with sync_playwright() as p:
+            browser = p.chromium.launch(headless=True)
+            context = browser.new_context(
+                user_agent=HEADERS["User-Agent"],
+                locale="en-IE",
+                viewport={"width": 1280, "height": 800},
+            )
+            page = context.new_page()
+            page.goto(url, wait_until="networkidle", timeout=30000)
+            html = page.content()
+            browser.close()
+
+        return BeautifulSoup(html, "lxml")
 
     def _make_id(self, slug: str) -> str:
         return f"{self.name}::{slug}"
