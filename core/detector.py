@@ -31,51 +31,57 @@ def diff(
     old: dict[str, Listing],
     new: list[Listing]
 ) -> list[Change]:
-    """Compare old state to new listings and return list of meaningful changes."""
+    """Compare old state to new listings and return list of meaningful changes.
+
+    Only emits changes worth notifying about:
+    - New listing that is open or coming soon (not closed)
+    - Status changed TO open
+    - Deadline or bedroom update on an open listing
+    """
     changes = []
 
     for listing in new:
+        status = normalise_status(listing.raw_status or listing.status)
+
         if listing.id not in old:
-            changes.append(Change(
-                change_type="new",
-                listing=listing,
-            ))
+            # Only notify for new listings that are open or coming soon
+            if status in ("open", "coming_soon"):
+                changes.append(Change(change_type="new", listing=listing))
             continue
 
         prev = old[listing.id]
+        prev_status = normalise_status(prev.raw_status or prev.status)
         field_changes = {}
 
-        # Status change
-        if normalise_status(listing.raw_status or listing.status) != normalise_status(prev.raw_status or prev.status):
-            old_status = normalise_status(prev.raw_status or prev.status)
-            new_status = normalise_status(listing.raw_status or listing.status)
-            if new_status == "open":
+        # Status change — only notify when transitioning TO open
+        if status != prev_status:
+            if status == "open":
                 changes.append(Change(change_type="opened", listing=listing, old_listing=prev))
-            elif new_status == "closed" and old_status == "open":
-                changes.append(Change(change_type="closed", listing=listing, old_listing=prev))
             field_changes["status"] = (prev.status, listing.status)
 
-        # Bedroom change
-        if sorted(listing.bedrooms) != sorted(prev.bedrooms) and listing.bedrooms:
-            field_changes["bedrooms"] = (prev.bedrooms, listing.bedrooms)
+        # Only track field changes on open listings
+        if status == "open":
+            # Bedroom change
+            if sorted(listing.bedrooms) != sorted(prev.bedrooms) and listing.bedrooms:
+                field_changes["bedrooms"] = (prev.bedrooms, listing.bedrooms)
 
-        # Deadline change
-        if listing.applications_close and listing.applications_close != prev.applications_close:
-            field_changes["applications_close"] = (prev.applications_close, listing.applications_close)
-            changes.append(Change(
-                change_type="deadline_updated",
-                listing=listing,
-                old_listing=prev,
-                diff=field_changes,
-            ))
+            # Deadline change
+            if listing.applications_close and listing.applications_close != prev.applications_close:
+                field_changes["applications_close"] = (prev.applications_close, listing.applications_close)
+                changes.append(Change(
+                    change_type="deadline_updated",
+                    listing=listing,
+                    old_listing=prev,
+                    diff=field_changes,
+                ))
 
-        # Generic content update (bedrooms, price, availability)
-        elif field_changes and "status" not in field_changes:
-            changes.append(Change(
-                change_type="updated",
-                listing=listing,
-                old_listing=prev,
-                diff=field_changes,
-            ))
+            # Generic content update (bedrooms, price) — not status
+            elif field_changes and "status" not in field_changes:
+                changes.append(Change(
+                    change_type="updated",
+                    listing=listing,
+                    old_listing=prev,
+                    diff=field_changes,
+                ))
 
     return changes

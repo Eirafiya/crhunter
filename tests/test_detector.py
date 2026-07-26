@@ -40,11 +40,22 @@ class TestNormaliseStatus:
 
 class TestDiff:
     def test_new_listing_detected(self):
-        new = [make_listing(id="p::new-dev", name="New Development")]
+        new = [make_listing(id="p::new-dev", name="New Development", status="open", raw_status="Applications Open")]
         changes = diff({}, new)
         assert len(changes) == 1
         assert changes[0].change_type == "new"
         assert changes[0].listing.name == "New Development"
+
+    def test_new_closed_listing_not_notified(self):
+        new = [make_listing(id="p::new-closed", name="Closed Dev", status="closed", raw_status="Applications Closed")]
+        changes = diff({}, new)
+        assert changes == []
+
+    def test_new_coming_soon_notified(self):
+        new = [make_listing(id="p::coming", name="Coming Dev", status="coming_soon", raw_status="Coming Soon")]
+        changes = diff({}, new)
+        assert len(changes) == 1
+        assert changes[0].change_type == "new"
 
     def test_no_change(self):
         listing = make_listing()
@@ -58,36 +69,62 @@ class TestDiff:
         changes = diff({old_listing.id: old_listing}, [new_listing])
         assert any(c.change_type == "opened" for c in changes)
 
-    def test_status_closed(self):
+    def test_status_closed_no_notification(self):
+        # Closing an application no longer sends a notification
         old_listing = make_listing(status="open", raw_status="Applications Open")
         new_listing = make_listing(status="closed", raw_status="Applications Closed")
         changes = diff({old_listing.id: old_listing}, [new_listing])
-        assert any(c.change_type == "closed" for c in changes)
+        assert changes == []
 
     def test_deadline_updated(self):
-        old_listing = make_listing(applications_close="30 July 2026")
-        new_listing = make_listing(applications_close="5 August 2026")
+        old_listing = make_listing(
+            status="open", raw_status="Applications Open", applications_close="30 July 2026"
+        )
+        new_listing = make_listing(
+            status="open", raw_status="Applications Open", applications_close="5 August 2026"
+        )
         changes = diff({old_listing.id: old_listing}, [new_listing])
         assert any(c.change_type == "deadline_updated" for c in changes)
 
+    def test_deadline_update_ignored_when_closed(self):
+        # Deadline changes on closed listings should not notify
+        old_listing = make_listing(
+            status="closed", raw_status="Applications Closed", applications_close="30 July 2026"
+        )
+        new_listing = make_listing(
+            status="closed", raw_status="Applications Closed", applications_close="5 August 2026"
+        )
+        changes = diff({old_listing.id: old_listing}, [new_listing])
+        assert changes == []
+
     def test_bedroom_update(self):
-        old_listing = make_listing(bedrooms=["1 Bed"])
-        new_listing = make_listing(bedrooms=["1 Bed", "2 Bed"])
+        old_listing = make_listing(
+            status="open", raw_status="Applications Open", bedrooms=["1 Bed"]
+        )
+        new_listing = make_listing(
+            status="open", raw_status="Applications Open", bedrooms=["1 Bed", "2 Bed"]
+        )
         changes = diff({old_listing.id: old_listing}, [new_listing])
         assert any(c.change_type == "updated" for c in changes)
 
     def test_multiple_new_listings(self):
+        # Only open/coming_soon listings should trigger notifications
         listings = [
-            make_listing(id=f"p::dev-{i}", name=f"Dev {i}")
-            for i in range(5)
+            make_listing(id=f"p::dev-{i}", name=f"Dev {i}", status="open", raw_status="Applications Open")
+            for i in range(3)
+        ] + [
+            make_listing(id=f"p::closed-{i}", name=f"Closed {i}", status="closed", raw_status="Applications Closed")
+            for i in range(2)
         ]
         changes = diff({}, listings)
-        assert len(changes) == 5
+        assert len(changes) == 3
         assert all(c.change_type == "new" for c in changes)
 
     def test_mixed_changes(self):
         existing = make_listing(id="p::existing", status="closed", raw_status="Closed")
-        new_dev = make_listing(id="p::brand-new", name="Brand New")
+        new_dev = make_listing(
+            id="p::brand-new", name="Brand New", status="open", raw_status="Applications Open"
+        )
         updated = make_listing(id="p::existing", status="open", raw_status="Applications Open")
         old_state = {existing.id: existing}
         changes = diff(old_state, [updated, new_dev])
