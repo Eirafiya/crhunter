@@ -52,7 +52,6 @@ def matches_filters(listing, filters: dict) -> bool:
 
     keywords = [k.lower() for k in filters.get("keywords", [])]
     if keywords:
-        haystack = f"{listing.name} {listing.location}".lower()
         # Keywords are OR — match if any keyword present, or if no keywords configured
         # Always pass through if no keywords set
         pass  # keywords are additive alerts, not filters — notify on keywords too

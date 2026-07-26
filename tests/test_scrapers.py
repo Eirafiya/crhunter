@@ -1,9 +1,8 @@
-import pytest
 import responses as responses_mock
 from scrapers.cluid import CluidScraper
 from scrapers.lda import LDAScraper
 from scrapers.tuath import TuathScraper
-from scrapers.respond import RespondScraper
+import pytest
 
 
 CLUID_FIXTURE = """
@@ -72,7 +71,7 @@ class TestCluidScraper:
         scraper = CluidScraper()
         listings = scraper.fetch()
         assert len(listings) >= 1
-        names = [l.name for l in listings]
+        names = [listing.name for listing in listings]
         assert any("Barnhall" in n or "Oscar" in n for n in names)
 
     @responses_mock.activate
@@ -99,7 +98,7 @@ class TestLDAScraper:
         scraper = LDAScraper()
         listings = scraper.fetch()
         assert len(listings) >= 1
-        statuses = [l.status for l in listings]
+        statuses = [listing.status for listing in listings]
         assert "closed" in statuses
 
     @responses_mock.activate
@@ -112,7 +111,7 @@ class TestLDAScraper:
         )
         scraper = LDAScraper()
         listings = scraper.fetch()
-        open_listings = [l for l in listings if l.status == "open"]
+        open_listings = [listing for listing in listings if listing.status == "open"]
         assert len(open_listings) >= 1
 
 
@@ -139,4 +138,4 @@ class TestTuathScraper:
         )
         scraper = TuathScraper()
         listings = scraper.fetch()
-        assert all(l.provider == "Tuath Housing" for l in listings)
+        assert all(listing.provider == "Tuath Housing" for listing in listings)

@@ -20,26 +20,26 @@ def _format_subject(change: Change) -> str:
 
 
 def _format_body(change: Change) -> str:
-    l = change.listing
+    listing = change.listing
     lines = [
-        f"<h2>{l.name}</h2>",
-        f"<p><strong>Provider:</strong> {l.provider}</p>",
-        f"<p><strong>Location:</strong> {l.location}</p>",
+        f"<h2>{listing.name}</h2>",
+        f"<p><strong>Provider:</strong> {listing.provider}</p>",
+        f"<p><strong>Location:</strong> {listing.location}</p>",
     ]
 
-    if l.bedrooms:
-        lines.append(f"<p><strong>Bedrooms:</strong> {', '.join(l.bedrooms)}</p>")
-    if l.price_from:
-        lines.append(f"<p><strong>From:</strong> {l.price_from}/month</p>")
-    if l.units_available:
-        lines.append(f"<p><strong>Units:</strong> {l.units_available}</p>")
+    if listing.bedrooms:
+        lines.append(f"<p><strong>Bedrooms:</strong> {', '.join(listing.bedrooms)}</p>")
+    if listing.price_from:
+        lines.append(f"<p><strong>From:</strong> {listing.price_from}/month</p>")
+    if listing.units_available:
+        lines.append(f"<p><strong>Units:</strong> {listing.units_available}</p>")
 
-    lines.append(f"<p><strong>Status:</strong> {l.raw_status or l.status}</p>")
+    lines.append(f"<p><strong>Status:</strong> {listing.raw_status or listing.status}</p>")
 
-    if l.applications_open:
-        lines.append(f"<p><strong>Opens:</strong> {l.applications_open}</p>")
-    if l.applications_close:
-        lines.append(f"<p><strong>Closes:</strong> {l.applications_close}</p>")
+    if listing.applications_open:
+        lines.append(f"<p><strong>Opens:</strong> {listing.applications_open}</p>")
+    if listing.applications_close:
+        lines.append(f"<p><strong>Closes:</strong> {listing.applications_close}</p>")
 
     # Show what changed
     if change.old_listing and change.diff:
@@ -48,11 +48,12 @@ def _format_body(change: Change) -> str:
             lines.append(f"<li><strong>{field}:</strong> {old_val} → {new_val}</li>")
         lines.append("</ul>")
 
-    if l.apply_url:
-        lines.append(f'<p><a href="{l.apply_url}">Apply now →</a></p>')
+    if listing.apply_url:
+        lines.append(f'<p><a href="{listing.apply_url}">Apply now →</a></p>')
 
     import datetime
-    lines.append(f"<p><small>Detected: {datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}</small></p>")
+    ts = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+    lines.append(f"<p><small>Detected: {ts}</small></p>")
 
     return "\n".join(lines)
 

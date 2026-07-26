@@ -1,6 +1,5 @@
-import pytest
 from core.models import Listing
-from core.detector import diff, normalise_status, Change
+from core.detector import diff, normalise_status
 
 
 def make_listing(**kwargs) -> Listing:

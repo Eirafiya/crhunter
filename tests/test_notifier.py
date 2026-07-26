@@ -1,5 +1,3 @@
-import pytest
-import responses as responses_mock
 from unittest.mock import patch, MagicMock
 from core.models import Listing
 from core.detector import Change

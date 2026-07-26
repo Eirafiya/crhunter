@@ -2,7 +2,6 @@ import logging
 import requests
 from bs4 import BeautifulSoup
 from core.models import Listing
-from core.detector import normalise_status
 
 logger = logging.getLogger(__name__)
 

@@ -185,14 +185,14 @@ class AffordableHomesScraper(BaseProvider):
         for block in blocks:
             if "Properties to Rent" not in block:
                 continue
-            lines = [l.strip() for l in block.split("\n") if l.strip()]
+            lines = [ln.strip() for ln in block.split("\n") if ln.strip()]
             if len(lines) < 3:
                 continue
             try:
                 name = lines[0]
-                raw_status = next((l for l in lines if re.search(r"coming soon|open|closed", l, re.I)), "unknown")
-                location = next((l for l in lines if re.search(r"(dublin|co\.|county)", l, re.I)), name)
-                bedrooms_str = next((l for l in lines if re.search(r"\d+\s*bed|studio", l, re.I)), "")
+                raw_status = next((ln for ln in lines if re.search(r"coming soon|open|closed", ln, re.I)), "unknown")
+                location = next((ln for ln in lines if re.search(r"(dublin|co\.|county)", ln, re.I)), name)
+                bedrooms_str = next((ln for ln in lines if re.search(r"\d+\s*bed|studio", ln, re.I)), "")
                 bedrooms = re.findall(r"(\d+\s*[Bb]ed|[Ss]tudio)", bedrooms_str)
                 price_match = re.search(r"€([\d,]+)", block)
                 price_from = f"€{price_match.group(1)}" if price_match else None

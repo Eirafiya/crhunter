@@ -2,7 +2,7 @@ import json
 import os
 import subprocess
 import logging
-from typing import Optional
+
 from core.models import Listing
 
 logger = logging.getLogger(__name__)
@@ -28,7 +28,7 @@ def save(provider: str, listings: list[Listing]) -> None:
     """Save current state for a provider."""
     os.makedirs(DATA_DIR, exist_ok=True)
     path = os.path.join(DATA_DIR, f"{provider}.json")
-    data = {l.id: l.to_dict() for l in listings}
+    data = {listing.id: listing.to_dict() for listing in listings}
     with open(path, "w") as f:
         json.dump(data, f, indent=2, default=str)
     logger.info(f"Saved {len(listings)} listings for {provider}")
