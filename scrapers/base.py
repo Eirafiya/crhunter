@@ -32,10 +32,21 @@ class BaseProvider:
 
     def _get(self, url: str) -> BeautifulSoup:
         import time
+        session = requests.Session()
+        session.headers.update(HEADERS)
+        # Warm up with a HEAD request to get cookies first
+        try:
+            from urllib.parse import urlparse
+            origin = f"{urlparse(url).scheme}://{urlparse(url).netloc}"
+            session.get(origin, timeout=10)
+            time.sleep(1)
+        except Exception:
+            pass
+
         for attempt in range(3):
-            resp = requests.get(url, headers=HEADERS, timeout=20)
+            resp = session.get(url, timeout=20)
             if resp.status_code == 403 and attempt < 2:
-                time.sleep(3 + attempt * 2)
+                time.sleep(4 + attempt * 3)
                 continue
             resp.raise_for_status()
             return BeautifulSoup(resp.text, "lxml")
