@@ -44,8 +44,8 @@ def diff(
         status = normalise_status(listing.raw_status or listing.status)
 
         if listing.id not in old:
-            # Only notify for new listings that are open or coming soon
-            if status in ("open", "coming_soon"):
+            # Only notify for new listings that are open, coming soon, or unknown status
+            if status in ("open", "coming_soon", "unknown"):
                 changes.append(Change(change_type="new", listing=listing))
             continue
 

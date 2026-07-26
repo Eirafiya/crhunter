@@ -57,6 +57,12 @@ class TestDiff:
         assert len(changes) == 1
         assert changes[0].change_type == "new"
 
+    def test_new_unknown_status_notified(self):
+        new = [make_listing(id="p::unknown", name="Unknown Dev", status="unknown", raw_status="")]
+        changes = diff({}, new)
+        assert len(changes) == 1
+        assert changes[0].change_type == "new"
+
     def test_no_change(self):
         listing = make_listing()
         old = {listing.id: listing}
