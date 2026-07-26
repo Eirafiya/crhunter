@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRHunter — Monitor Status</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #f5f5f5; color: #333; }
+    header { background: #1a1a2e; color: #fff; padding: 20px 32px; display: flex; align-items: center; gap: 12px; }
+    header h1 { font-size: 1.4rem; font-weight: 600; }
+    header span { font-size: 0.85rem; opacity: 0.6; margin-left: auto; }
+    .container { max-width: 1100px; margin: 32px auto; padding: 0 16px; }
+    .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin-bottom: 32px; }
+    .card { background: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .card .label { font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 0.05em; }
+    .card .value { font-size: 1.8rem; font-weight: 700; margin-top: 4px; }
+    .card .value.green { color: #22c55e; }
+    .card .value.amber { color: #f59e0b; }
+    table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    th { background: #f9fafb; text-align: left; padding: 12px 16px; font-size: 0.8rem; color: #666; text-transform: uppercase; letter-spacing: 0.04em; border-bottom: 1px solid #eee; }
+    td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; font-size: 0.9rem; }
+    tr:last-child td { border-bottom: none; }
+    .badge { display: inline-block; padding: 2px 10px; border-radius: 99px; font-size: 0.75rem; font-weight: 600; }
+    .badge.open { background: #dcfce7; color: #166534; }
+    .badge.closed { background: #fee2e2; color: #991b1b; }
+    .badge.coming_soon { background: #fef9c3; color: #854d0e; }
+    .badge.unknown { background: #f3f4f6; color: #6b7280; }
+    .section-title { font-size: 1rem; font-weight: 600; margin: 32px 0 12px; }
+    .empty { text-align: center; padding: 32px; color: #aaa; font-size: 0.9rem; }
+    footer { text-align: center; padding: 32px; color: #bbb; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🏠 CRHunter</h1>
+    <span id="last-updated">Loading...</span>
+  </header>
+
+  <div class="container">
+    <div class="summary">
+      <div class="card">
+        <div class="label">Providers monitored</div>
+        <div class="value" id="provider-count">—</div>
+      </div>
+      <div class="card">
+        <div class="label">Total listings</div>
+        <div class="value" id="total-listings">—</div>
+      </div>
+      <div class="card">
+        <div class="label">Open now</div>
+        <div class="value green" id="open-count">—</div>
+      </div>
+      <div class="card">
+        <div class="label">Coming soon</div>
+        <div class="value amber" id="coming-count">—</div>
+      </div>
+    </div>
+
+    <div class="section-title">Open Listings</div>
+    <table id="open-table">
+      <thead>
+        <tr>
+          <th>Development</th>
+          <th>Provider</th>
+          <th>Location</th>
+          <th>Bedrooms</th>
+          <th>Price from</th>
+          <th>Status</th>
+          <th>Apply</th>
+        </tr>
+      </thead>
+      <tbody id="open-body">
+        <tr><td colspan="7" class="empty">Loading...</td></tr>
+      </tbody>
+    </table>
+
+    <div class="section-title">All Listings</div>
+    <table id="all-table">
+      <thead>
+        <tr>
+          <th>Development</th>
+          <th>Provider</th>
+          <th>Location</th>
+          <th>Bedrooms</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody id="all-body">
+        <tr><td colspan="5" class="empty">Loading...</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer>CRHunter — auto-refreshes every 10 minutes</footer>
+
+  <script>
+    const DATA_FILES = [
+      '../data/affordablehomes.json',
+      '../data/cluid.json',
+      '../data/lda.json',
+      '../data/respond.json',
+      '../data/tuath.json',
+      '../data/circle_vha.json',
+    ];
+
+    function badge(status) {
+      const label = status === 'open' ? 'Open' :
+                    status === 'closed' ? 'Closed' :
+                    status === 'coming_soon' ? 'Coming Soon' : 'Unknown';
+      return `<span class="badge ${status}">${label}</span>`;
+    }
+
+    async function loadAll() {
+      const all = [];
+      for (const url of DATA_FILES) {
+        try {
+          const r = await fetch(url);
+          if (!r.ok) continue;
+          const data = await r.json();
+          Object.values(data).forEach(l => all.push(l));
+        } catch (e) { /* file may not exist yet */ }
+      }
+      return all;
+    }
+
+    async function render() {
+      const listings = await loadAll();
+
+      document.getElementById('provider-count').textContent =
+        new Set(listings.map(l => l.provider)).size || '—';
+      document.getElementById('total-listings').textContent = listings.length || '—';
+      document.getElementById('open-count').textContent =
+        listings.filter(l => l.status === 'open').length;
+      document.getElementById('coming-count').textContent =
+        listings.filter(l => l.status === 'coming_soon').length;
+      document.getElementById('last-updated').textContent =
+        'Updated: ' + new Date().toLocaleString('en-IE');
+
+      const open = listings.filter(l => l.status === 'open');
+      const openBody = document.getElementById('open-body');
+      if (open.length === 0) {
+        openBody.innerHTML = '<tr><td colspan="7" class="empty">No open listings right now</td></tr>';
+      } else {
+        openBody.innerHTML = open.map(l => `
+          <tr>
+            <td><strong>${l.name}</strong></td>
+            <td>${l.provider}</td>
+            <td>${l.location}</td>
+            <td>${(l.bedrooms || []).join(', ') || '—'}</td>
+            <td>${l.price_from || '—'}</td>
+            <td>${badge(l.status)}</td>
+            <td>${l.apply_url ? `<a href="${l.apply_url}" target="_blank">Apply →</a>` : '—'}</td>
+          </tr>`).join('');
+      }
+
+      const allBody = document.getElementById('all-body');
+      allBody.innerHTML = listings.map(l => `
+        <tr>
+          <td>${l.apply_url ? `<a href="${l.apply_url}" target="_blank">${l.name}</a>` : l.name}</td>
+          <td>${l.provider}</td>
+          <td>${l.location}</td>
+          <td>${(l.bedrooms || []).join(', ') || '—'}</td>
+          <td>${badge(l.status)}</td>
+        </tr>`).join('');
+    }
+
+    render();
+    setInterval(render, 10 * 60 * 1000);
+  </script>
+</body>
+</html>

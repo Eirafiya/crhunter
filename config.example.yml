@@ -1,0 +1,27 @@
+filters:
+  counties:
+    - Dublin
+  bedrooms:
+    - 1
+    - 2
+    - 3
+  keywords:
+    - Lightburn
+    - Murphystown
+    - Oscar Traynor
+    - Airton
+    - Leopardstown
+    - Dublin 18
+
+scan_frequency_hours: 3
+
+notifications:
+  email: true
+
+providers:
+  affordablehomes: true
+  cluid: true
+  lda: true
+  respond: true
+  tuath: true
+  circle_vha: true
