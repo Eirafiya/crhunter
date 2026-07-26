@@ -27,7 +27,8 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Install Playwright browsers
-        run: playwright install chromium --with-deps
+        run: python -m playwright install chromium
+        continue-on-error: true   # Playwright is fallback only — scan proceeds without it
 
       - name: Configure git
         run: |
