@@ -1,6 +1,5 @@
 import json
 import os
-import subprocess
 import logging
 
 from core.models import Listing
@@ -35,18 +34,5 @@ def save(provider: str, listings: list[Listing]) -> None:
 
 
 def commit_and_push(message: str = "state: update listings") -> None:
-    """Commit updated data files and push to origin."""
-    try:
-        subprocess.run(["git", "add", DATA_DIR], check=True, capture_output=True)
-        result = subprocess.run(
-            ["git", "diff", "--cached", "--quiet"],
-            capture_output=True
-        )
-        if result.returncode == 0:
-            logger.info("No state changes to commit")
-            return
-        subprocess.run(["git", "commit", "-m", message], check=True, capture_output=True)
-        subprocess.run(["git", "push"], check=True, capture_output=True)
-        logger.info("State committed and pushed")
-    except subprocess.CalledProcessError as e:
-        logger.error(f"Git operation failed: {e}")
+    """No-op when run inside CI — the calling workflow handles git state."""
+    logger.info(f"State save complete ({message}) — git commit handled by workflow")
