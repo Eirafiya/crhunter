@@ -5,6 +5,7 @@ Scans configured providers, detects changes, sends email alerts.
 """
 import argparse
 import logging
+import time
 import os
 import sys
 import yaml
@@ -82,6 +83,7 @@ def run(config_path: str) -> dict:
         except Exception as e:
             logger.error(f"{name}: scrape failed — {e}")
             results[name] = {"error": str(e), "listings": 0, "changes": 0}
+            time.sleep(2)
             continue
 
         if not listings:
@@ -108,6 +110,7 @@ def run(config_path: str) -> dict:
             "emails_sent": emails_sent,
         }
         logger.info(f"{name}: {len(listings)} listings, {len(all_changes)} changes, {emails_sent} emails sent")
+        time.sleep(2)  # polite delay between providers
 
     store.commit_and_push(f"state: scan complete — {total_changes} changes detected")
     logger.info(f"Scan complete: {total_changes} total changes, {total_emails} emails sent")
