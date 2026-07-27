@@ -75,7 +75,7 @@
       </tbody>
     </table>
 
-    <div class="section-title">All Listings</div>
+    <div class="section-title">All Active Listings</div>
     <table id="all-table">
       <thead>
         <tr>
@@ -133,7 +133,7 @@
       document.getElementById('open-count').textContent =
         listings.filter(l => l.status === 'open').length;
       document.getElementById('coming-count').textContent =
-        listings.filter(l => l.status === 'coming_soon').length;
+        listings.filter(l => l.status === 'coming_soon' || l.status === 'unknown').length;
       document.getElementById('last-updated').textContent =
         'Updated: ' + new Date().toLocaleString('en-IE');
 

@@ -1,21 +1,16 @@
-name: Monitor
+name: Tests
 
 on:
-  schedule:
-    - cron: '0 */3 * * *'   # every 3 hours
-  workflow_dispatch:          # manual trigger from GitHub UI
-
-permissions:
-  contents: write             # needed to commit updated state
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
-  scan:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v4
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -26,25 +21,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Install Playwright browsers
-        run: |
-          python -m playwright install chromium
-          python -m playwright install-deps chromium
-        continue-on-error: true   # Playwright is fallback only — scan proceeds without it
+      - name: Run tests
+        run: pytest tests/ -v --cov=core --cov=scrapers --cov-report=term-missing
 
-      - name: Configure git
+      - name: Lint
         run: |
-          git config user.name "CRHunter Bot"
-          git config user.email "bot@crhunter.io"
-
-      - name: Run scan
-        env:
-          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-          EMAIL_SENDER: ${{ secrets.EMAIL_SENDER }}
-          EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
-        run: python run_all.py --config config.yml
-
-      - name: Push state
-        run: |
-          git add data/
-          git diff --cached --quiet || git commit -m "state: scan $(date -u +'%Y-%m-%d %H:%M UTC')" && git push
+          pip install flake8
+          flake8 . --max-line-length=120 --exclude=.git,__pycache__
