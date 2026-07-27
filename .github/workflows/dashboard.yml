@@ -21,6 +21,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Copy data into dashboard
+        run: |
+          mkdir -p dashboard/data
+          cp data/*.json dashboard/data/ 2>/dev/null || true
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
