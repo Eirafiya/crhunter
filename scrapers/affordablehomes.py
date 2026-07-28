@@ -139,7 +139,7 @@ class AffordableHomesScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
+            link = href if href.startswith("http") else urljoin(self.url, href)
 
         if not location:
             location = name
