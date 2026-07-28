@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urljoin
 import logging
 from scrapers.base import BaseProvider
 from core.models import Listing
@@ -46,7 +47,7 @@ class CluidScraper(BaseProvider):
                 link = None
                 if link_el:
                     href = link_el["href"]
-                    link = BASE + href if href.startswith("/") else href
+                    link = urljoin(BASE + "/", href.lstrip("/")) if not href.startswith("http") else href
                 location = ""
                 if name_el:
                     sib = name_el.find_next_sibling(["p", "span"])
@@ -78,7 +79,7 @@ class CluidScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = BASE + href if href.startswith("/") else href
+            link = urljoin(BASE + "/", href.lstrip("/")) if not href.startswith("http") else href
         location_el = card.find("p")
         location = location_el.get_text(strip=True) if location_el else name
         slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")

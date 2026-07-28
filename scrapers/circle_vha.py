@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urljoin
 import logging
 from scrapers.base import BaseProvider
 from core.models import Listing
@@ -50,7 +51,7 @@ class CircleVHAScraper(BaseProvider):
                 link = None
                 if link_el:
                     href = link_el["href"]
-                    link = href if href.startswith("http") else BASE + href
+                    link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
                 slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:60]
                 listings.append(Listing(
                     id=self._make_id(slug),
@@ -79,7 +80,7 @@ class CircleVHAScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = href if href.startswith("http") else BASE + href
+            link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
         location_el = card.find("p")
         location = location_el.get_text(strip=True)[:80] if location_el else name
         slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:60]

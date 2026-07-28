@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urljoin
 import logging
 from scrapers.base import BaseProvider
 from core.models import Listing
@@ -50,7 +51,7 @@ class LDAScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = href if href.startswith("http") else BASE + href
+            link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
 
         # Extract location from name (LDA includes location in the title)
         location = name

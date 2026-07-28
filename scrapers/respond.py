@@ -1,4 +1,5 @@
 import re
+from urllib.parse import urljoin
 import logging
 from scrapers.base import BaseProvider
 from core.models import Listing
@@ -53,7 +54,7 @@ class RespondScraper(BaseProvider):
                 link = None
                 if link_el:
                     href = link_el["href"]
-                    link = href if href.startswith("http") else BASE + href
+                    link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
                 location = location_el.get_text(strip=True) if location_el else text
                 slug = re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")[:60]
 
@@ -83,7 +84,7 @@ class RespondScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = href if href.startswith("http") else BASE + href
+            link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
         location_el = card.find("p")
         location = location_el.get_text(strip=True) if location_el else name
         slug = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")[:60]

@@ -1,5 +1,6 @@
 import re
 import logging
+from urllib.parse import urljoin
 from scrapers.base import BaseProvider
 from core.models import Listing
 from core.detector import normalise_status
@@ -138,7 +139,7 @@ class AffordableHomesScraper(BaseProvider):
         link = None
         if link_el:
             href = link_el["href"]
-            link = href if href.startswith("http") else BASE + href
+            link = href if href.startswith("http") else urljoin(BASE + "/", href.lstrip("/"))
 
         if not location:
             location = name
