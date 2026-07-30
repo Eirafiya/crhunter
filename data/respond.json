@@ -1,1 +1,47 @@
-{}
+{
+  "respond::step-1": {
+    "id": "respond::step-1",
+    "provider": "Respond Housing",
+    "name": "Step 1",
+    "location": "",
+    "county": "Unknown",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.respond.ie/properties/airton-road-2/",
+    "raw_status": "open"
+  },
+  "respond::step-2": {
+    "id": "respond::step-2",
+    "provider": "Respond Housing",
+    "name": "Step 2",
+    "location": "",
+    "county": "Unknown",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.respond.ie/properties/airton-road-2/",
+    "raw_status": "open"
+  },
+  "respond::thank-you-for-your-interest-our-applications-are-currently-c": {
+    "id": "respond::thank-you-for-your-interest-our-applications-are-currently-c",
+    "provider": "Respond Housing",
+    "name": "Thank you for your interest. Our applications are currently CLOSED. Please check back soon for more cost rental schemes",
+    "location": "TENANT PROFILEGemma SweenyParkleigh, Seven Mills",
+    "county": "Unknown",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.respond.ie/properties/airton-road-2/",
+    "raw_status": "open"
+  }
+}

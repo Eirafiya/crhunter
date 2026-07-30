@@ -1,1 +1,17 @@
-{}
+{
+  "circle_vha::one-bed": {
+    "id": "circle_vha::one-bed",
+    "provider": "Circle VHA",
+    "name": "One-bed",
+    "location": "This new housing tenure offers a long-term, secure rental option that will contr",
+    "county": "Unknown",
+    "status": "unknown",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.irishstatutebook.ie/eli/2021/act/25/section/28/enacted/en/html#part3",
+    "raw_status": "unknown"
+  }
+}
