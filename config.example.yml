@@ -13,15 +13,18 @@ filters:
     - Leopardstown
     - Dublin 18
 
-scan_frequency_hours: 3
+scan_frequency_hours: 6
 
 notifications:
   email: true
 
 providers:
+  # Central portal — works from GitHub Actions, covers all providers
   affordablehomes: true
-  cluid: true
-  lda: true
-  respond: true
-  tuath: true
-  circle_vha: true
+  # Individual provider scrapers — blocked by Cloudflare on GitHub Actions IPs
+  # Enable only if running locally (scan_local.sh)
+  cluid: false
+  lda: false
+  respond: false
+  tuath: false
+  circle_vha: false
