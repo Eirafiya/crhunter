@@ -76,7 +76,6 @@ class RespondScraper(BaseProvider):
 
         # Find which named section this card falls under in the page
         # by looking at all headings in document order
-        all_headings = soup.find_all(["h2", "h3"])
         card_pos = None
         for i, el in enumerate(soup.find_all(True)):
             if el == card:
