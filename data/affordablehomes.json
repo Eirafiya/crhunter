@@ -14,6 +14,21 @@
     "apply_url": "https://affordablehomes.ie/rent/carrigmorewoods3/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::stoneview": {
+    "id": "affordablehomes::stoneview",
+    "provider": "Affordable Homes IE",
+    "name": "Stoneview",
+    "location": "Walkinstown, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,670",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/stoneview1/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::grange-oaks-kilternan-dublin-18": {
     "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
     "provider": "Affordable Homes IE",
@@ -27,21 +42,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/grange/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::stoneview": {
-    "id": "affordablehomes::stoneview",
-    "provider": "Affordable Homes IE",
-    "name": "Stoneview",
-    "location": "Walkinstown, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,670",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/stoneview1/",
     "raw_status": "Coming Soon"
   }
 }

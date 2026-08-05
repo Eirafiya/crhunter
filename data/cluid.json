@@ -1,1 +1,17 @@
-{}
+{
+  "cluid::stoneview": {
+    "id": "cluid::stoneview",
+    "provider": "Cl\u00faid Housing",
+    "name": "Stoneview",
+    "location": "Stoneview, Walkinstown, Dublin 12",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/stoneview-aug26/",
+    "raw_status": "Applications open"
+  }
+}
