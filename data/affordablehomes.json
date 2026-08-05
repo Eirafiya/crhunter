@@ -1,4 +1,19 @@
 {
+  "affordablehomes::grange-oaks-kilternan-dublin-18": {
+    "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
+    "provider": "Affordable Homes IE",
+    "name": "Grange Oaks, Kilternan, Dublin 18",
+    "location": "Kilternan Dublin 18, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,395",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/grange/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::carrigmore-woods": {
     "id": "affordablehomes::carrigmore-woods",
     "provider": "Affordable Homes IE",
@@ -28,20 +43,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/stoneview1/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::grange-oaks-kilternan-dublin-18": {
-    "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
-    "provider": "Affordable Homes IE",
-    "name": "Grange Oaks, Kilternan, Dublin 18",
-    "location": "Kilternan Dublin 18, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/grange/",
-    "raw_status": "Coming Soon"
   }
 }
