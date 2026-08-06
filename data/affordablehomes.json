@@ -1,4 +1,19 @@
 {
+  "affordablehomes::farranshock-park": {
+    "id": "affordablehomes::farranshock-park",
+    "provider": "Affordable Homes IE",
+    "name": "Farranshock Park",
+    "location": "Mullingar, Co. Westmeath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,290",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/farranshockpark2/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::grange-oaks-kilternan-dublin-18": {
     "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
     "provider": "Affordable Homes IE",
