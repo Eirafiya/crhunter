@@ -1,4 +1,19 @@
 {
+  "affordablehomes::docherty-hall-the-green-carberry-meadows": {
+    "id": "affordablehomes::docherty-hall-the-green-carberry-meadows",
+    "provider": "Affordable Homes IE",
+    "name": "Docherty Hall, The Green, Carberry Meadows",
+    "location": "Donabate, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,575",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/dochertyhallthegreencarberrymeadows1/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::farranshock-park": {
     "id": "affordablehomes::farranshock-park",
     "provider": "Affordable Homes IE",
@@ -29,21 +44,6 @@
     "apply_url": "https://affordablehomes.ie/rent/grange/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::carrigmore-woods": {
-    "id": "affordablehomes::carrigmore-woods",
-    "provider": "Affordable Homes IE",
-    "name": "Carrigmore Woods",
-    "location": "Citywest, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/carrigmorewoods3/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::stoneview": {
     "id": "affordablehomes::stoneview",
     "provider": "Affordable Homes IE",
@@ -58,20 +58,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/stoneview1/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::docherty-hall-the-green-carberry-meadows": {
-    "id": "affordablehomes::docherty-hall-the-green-carberry-meadows",
-    "provider": "Affordable Homes IE",
-    "name": "Docherty Hall, The Green, Carberry Meadows",
-    "location": "Donabate, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,575",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/dochertyhallthegreencarberrymeadows1/",
-    "raw_status": "Coming Soon"
   }
 }
