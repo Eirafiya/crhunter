@@ -29,21 +29,6 @@
     "apply_url": "https://affordablehomes.ie/rent/hearthfield/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::docherty-hall-the-green-carberry-meadows": {
-    "id": "affordablehomes::docherty-hall-the-green-carberry-meadows",
-    "provider": "Affordable Homes IE",
-    "name": "Docherty Hall, The Green, Carberry Meadows",
-    "location": "Donabate, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,575",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/dochertyhallthegreencarberrymeadows1/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::grange-oaks-kilternan-dublin-18": {
     "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
     "provider": "Affordable Homes IE",
