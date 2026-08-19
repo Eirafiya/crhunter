@@ -1,4 +1,19 @@
 {
+  "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
+    "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
+    "provider": "Affordable Homes IE",
+    "name": "Kilmartin Grove, Hollystown, Co. Dublin",
+    "location": "Hollystown, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,390",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilmartin/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::the-paddocks": {
     "id": "affordablehomes::the-paddocks",
     "provider": "Affordable Homes IE",
@@ -104,34 +119,19 @@
     "apply_url": "https://affordablehomes.ie/rent/hearthfield/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::grange-oaks-kilternan-dublin-18": {
-    "id": "affordablehomes::grange-oaks-kilternan-dublin-18",
+  "affordablehomes::balmoston-donabate-co-dublin": {
+    "id": "affordablehomes::balmoston-donabate-co-dublin",
     "provider": "Affordable Homes IE",
-    "name": "Grange Oaks, Kilternan, Dublin 18",
-    "location": "Kilternan Dublin 18, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/grange/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
-    "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
-    "provider": "Affordable Homes IE",
-    "name": "Kilmartin Grove, Hollystown, Co. Dublin",
-    "location": "Hollystown, Co. Dublin",
+    "name": "Balmoston, Donabate, Co Dublin",
+    "location": "Donabate, Co. Dublin",
     "county": "Dublin",
     "status": "coming_soon",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,390",
+    "price_from": "Prices starting from \u20ac1,330",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilmartin/",
+    "apply_url": "https://affordablehomes.ie/rent/balmoston/",
     "raw_status": "Coming Soon"
   },
   "affordablehomes::cooper-square": {
