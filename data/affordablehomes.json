@@ -74,21 +74,6 @@
     "apply_url": "https://affordablehomes.ie/rent/airtonplaza3/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::kilmartin-grove": {
-    "id": "affordablehomes::kilmartin-grove",
-    "provider": "Affordable Homes IE",
-    "name": "Kilmartin Grove",
-    "location": "Hollystown, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,268",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilmartingrove5/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::an-cnocan": {
     "id": "affordablehomes::an-cnocan",
     "provider": "Affordable Homes IE",
