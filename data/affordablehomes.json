@@ -1,4 +1,34 @@
 {
+  "affordablehomes::rathborne-wharf": {
+    "id": "affordablehomes::rathborne-wharf",
+    "provider": "Affordable Homes IE",
+    "name": "Rathborne Wharf",
+    "location": "Dublin 15, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,350",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/rathbornewharf/",
+    "raw_status": "Applications Open"
+  },
+  "affordablehomes::ard-raithn": {
+    "id": "affordablehomes::ard-raithn",
+    "provider": "Affordable Homes IE",
+    "name": "Ard Raithn\u00ed",
+    "location": "Bearna, Co. Galway",
+    "county": "Galway",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,590",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/ardraithni/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::balmoston-donabate-co-dublin": {
     "id": "affordablehomes::balmoston-donabate-co-dublin",
     "provider": "Affordable Homes IE",
