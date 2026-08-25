@@ -149,6 +149,21 @@
     "apply_url": "https://affordablehomes.ie/rent/hearthfield/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::parklands-parade-citywest-dublin-24": {
+    "id": "affordablehomes::parklands-parade-citywest-dublin-24",
+    "provider": "Affordable Homes IE",
+    "name": "Parklands Parade, Citywest, Dublin 24",
+    "location": "Citywest, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,334",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/park/",
+    "raw_status": "Coming Soon"
+  },
   "affordablehomes::cooper-square": {
     "id": "affordablehomes::cooper-square",
     "provider": "Affordable Homes IE",
