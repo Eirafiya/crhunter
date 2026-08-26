@@ -1,4 +1,19 @@
 {
+  "affordablehomes::blessington-demesne": {
+    "id": "affordablehomes::blessington-demesne",
+    "provider": "Affordable Homes IE",
+    "name": "Blessington Demesne",
+    "location": "Blessington, Co. Wicklow",
+    "county": "Wicklow",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,087",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/blessingtondemesne/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::parklands-parade-citywest-dublin-24": {
     "id": "affordablehomes::parklands-parade-citywest-dublin-24",
     "provider": "Affordable Homes IE",
@@ -59,21 +74,6 @@
     "apply_url": "https://affordablehomes.ie/rent/balmoston/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
-    "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
-    "provider": "Affordable Homes IE",
-    "name": "Kilmartin Grove, Hollystown, Co. Dublin",
-    "location": "Hollystown, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,390",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilmartin/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::the-paddocks": {
     "id": "affordablehomes::the-paddocks",
     "provider": "Affordable Homes IE",
@@ -87,51 +87,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::newton-heights": {
-    "id": "affordablehomes::newton-heights",
-    "provider": "Affordable Homes IE",
-    "name": "Newton Heights",
-    "location": "Lotamore, Co. Cork",
-    "county": "Cork",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,500",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/newtonheights/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::longview": {
-    "id": "affordablehomes::longview",
-    "provider": "Affordable Homes IE",
-    "name": "Longview",
-    "location": "Ballyvolane, Co. Cork",
-    "county": "Cork",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,379",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/longview2/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::airton-plaza": {
-    "id": "affordablehomes::airton-plaza",
-    "provider": "Affordable Homes IE",
-    "name": "Airton Plaza",
-    "location": "Belgard Road, Tallaght, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,780",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/airtonplaza3/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::an-cnocan": {
@@ -164,19 +119,19 @@
     "apply_url": "https://affordablehomes.ie/rent/hearthfield/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::blessington-demesne": {
-    "id": "affordablehomes::blessington-demesne",
+  "affordablehomes::cooper-square": {
+    "id": "affordablehomes::cooper-square",
     "provider": "Affordable Homes IE",
-    "name": "Blessington Demesne",
-    "location": "Blessington, Co. Wicklow",
-    "county": "Wicklow",
+    "name": "Cooper Square",
+    "location": "Seven Mills, Clonburris, Dublin 22, Co. Dublin",
+    "county": "Dublin",
     "status": "coming_soon",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,087",
+    "price_from": "Prices starting from \u20ac1,600",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/blessingtondemesne/",
+    "apply_url": "https://affordablehomes.ie/rent/coopersquare1/",
     "raw_status": "Coming Soon"
   }
 }
