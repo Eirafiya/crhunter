@@ -1,4 +1,19 @@
 {
+  "affordablehomes::ard-raithn": {
+    "id": "affordablehomes::ard-raithn",
+    "provider": "Affordable Homes IE",
+    "name": "Ard Raithn\u00ed",
+    "location": "Bearna, Co. Galway",
+    "county": "Galway",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,590",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/ardraithni/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::ballycomyn-blessington": {
     "id": "affordablehomes::ballycomyn-blessington",
     "provider": "Affordable Homes IE",
@@ -28,21 +43,6 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/park/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::ard-raithn": {
-    "id": "affordablehomes::ard-raithn",
-    "provider": "Affordable Homes IE",
-    "name": "Ard Raithn\u00ed",
-    "location": "Bearna, Co. Galway",
-    "county": "Galway",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,380",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/ardraithni2/",
-    "raw_status": "Coming Soon"
   },
   "affordablehomes::balmoston-donabate-co-dublin": {
     "id": "affordablehomes::balmoston-donabate-co-dublin",
@@ -88,5 +88,20 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/coopersquare1/",
     "raw_status": "Applications Open"
+  },
+  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
+    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
+    "provider": "Affordable Homes IE",
+    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
+    "location": "Clondalkin, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,296",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilcarbey/",
+    "raw_status": "Coming Soon"
   }
 }
