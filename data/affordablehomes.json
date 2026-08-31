@@ -88,20 +88,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/coopersquare1/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::an-cnocan": {
-    "id": "affordablehomes::an-cnocan",
-    "provider": "Affordable Homes IE",
-    "name": "An Cnocan",
-    "location": "Milleencoola, Bantry, Co. Cork",
-    "county": "Cork",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,117",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/ancnocan1/",
-    "raw_status": "Applications Open"
   }
 }
