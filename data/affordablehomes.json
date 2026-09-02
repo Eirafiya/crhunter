@@ -1,4 +1,19 @@
 {
+  "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
+    "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
+    "provider": "Affordable Homes IE",
+    "name": "Kilmartin Grove, Hollystown, Co. Dublin",
+    "location": "Hollystown, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,620",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilmartingrove/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
     "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
     "provider": "Affordable Homes IE",
@@ -88,20 +103,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/coopersquare1/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
-    "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
-    "provider": "Affordable Homes IE",
-    "name": "Kilmartin Grove, Hollystown, Co. Dublin",
-    "location": "Hollystown, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,620",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilmartingrove/",
-    "raw_status": "Coming Soon"
   }
 }
