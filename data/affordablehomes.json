@@ -89,19 +89,19 @@
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::cooper-square": {
-    "id": "affordablehomes::cooper-square",
+  "affordablehomes::cornamaddy-court-athlone-co-westmeath": {
+    "id": "affordablehomes::cornamaddy-court-athlone-co-westmeath",
     "provider": "Affordable Homes IE",
-    "name": "Cooper Square",
-    "location": "Seven Mills, Clonburris, Dublin 22, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
+    "name": "Cornamaddy Court, Athlone, Co. Westmeath",
+    "location": "Athlone, Co. Westmeath",
+    "county": "Meath",
+    "status": "coming_soon",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,600",
+    "price_from": "Prices starting from \u20ac1,010",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/coopersquare1/",
-    "raw_status": "Applications Open"
+    "apply_url": "https://affordablehomes.ie/rent/cornmaddy/",
+    "raw_status": "Coming Soon"
   }
 }
