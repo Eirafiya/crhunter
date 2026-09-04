@@ -1,4 +1,19 @@
 {
+  "affordablehomes::cornamaddy-court-athlone-co-westmeath": {
+    "id": "affordablehomes::cornamaddy-court-athlone-co-westmeath",
+    "provider": "Affordable Homes IE",
+    "name": "Cornamaddy Court, Athlone, Co. Westmeath",
+    "location": "Athlone, Co. Westmeath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,010",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/cornmaddy/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::kilmartin-grove-hollystown-co-dublin": {
     "id": "affordablehomes::kilmartin-grove-hollystown-co-dublin",
     "provider": "Affordable Homes IE",
@@ -20,14 +35,14 @@
     "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
     "location": "Clondalkin, Co. Dublin",
     "county": "Dublin",
-    "status": "open",
+    "status": "coming_soon",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,296",
+    "price_from": "Prices starting from \u20ac1,054",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilcarbey/",
-    "raw_status": "Applications Open"
+    "apply_url": "https://affordablehomes.ie/rent/kil/",
+    "raw_status": "Coming Soon"
   },
   "affordablehomes::ard-raithn": {
     "id": "affordablehomes::ard-raithn",
@@ -88,20 +103,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::cornamaddy-court-athlone-co-westmeath": {
-    "id": "affordablehomes::cornamaddy-court-athlone-co-westmeath",
-    "provider": "Affordable Homes IE",
-    "name": "Cornamaddy Court, Athlone, Co. Westmeath",
-    "location": "Athlone, Co. Westmeath",
-    "county": "Meath",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,010",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/cornmaddy/",
-    "raw_status": "Coming Soon"
   }
 }
