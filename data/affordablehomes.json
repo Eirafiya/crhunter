@@ -1,4 +1,19 @@
 {
+  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
+    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
+    "provider": "Affordable Homes IE",
+    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
+    "location": "Clondalkin, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,296",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilcarbey/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::cornamaddy-court-athlone-co-westmeath": {
     "id": "affordablehomes::cornamaddy-court-athlone-co-westmeath",
     "provider": "Affordable Homes IE",
@@ -29,21 +44,6 @@
     "apply_url": "https://affordablehomes.ie/rent/kilmartingrove/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
-    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
-    "provider": "Affordable Homes IE",
-    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
-    "location": "Clondalkin, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,054",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kil/",
-    "raw_status": "Coming Soon"
-  },
   "affordablehomes::ard-raithn": {
     "id": "affordablehomes::ard-raithn",
     "provider": "Affordable Homes IE",
@@ -52,11 +52,11 @@
     "county": "Galway",
     "status": "open",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,590",
+    "price_from": "Prices starting from \u20ac1,380",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/ardraithni/",
+    "apply_url": "https://affordablehomes.ie/rent/ardraithni2/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::ballycomyn-blessington": {
@@ -103,5 +103,20 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
+  },
+  "affordablehomes::folkstown-park-balbriggan-co-dublin-phase-2": {
+    "id": "affordablehomes::folkstown-park-balbriggan-co-dublin-phase-2",
+    "provider": "Affordable Homes IE",
+    "name": "Folkstown Park, Balbriggan, Co Dublin (Phase 2)",
+    "location": "Balbriggan, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,100",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/folkstown/",
+    "raw_status": "Coming Soon"
   }
 }
