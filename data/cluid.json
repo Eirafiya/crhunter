@@ -1,1 +1,32 @@
-{}
+{
+  "cluid::the-willows": {
+    "id": "cluid::the-willows",
+    "provider": "Cl\u00faid Housing",
+    "name": "The Willows",
+    "location": "The Willows, Dunshaughlin, Co. Meath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/the-willows/",
+    "raw_status": "Applications open"
+  },
+  "cluid::longview-phase-2": {
+    "id": "cluid::longview-phase-2",
+    "provider": "Cl\u00faid Housing",
+    "name": "Longview Phase 2",
+    "location": "Longview, White\u2019s Cross, Co. Cork",
+    "county": "Cork",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/longview-phase-2/",
+    "raw_status": "Applications open"
+  }
+}
