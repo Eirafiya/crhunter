@@ -1,4 +1,19 @@
 {
+  "affordablehomes::swiftbanks-mill-road-saggart-co-dublin": {
+    "id": "affordablehomes::swiftbanks-mill-road-saggart-co-dublin",
+    "provider": "Affordable Homes IE",
+    "name": "Swiftbanks, Mill Road, Saggart, Co. Dublin",
+    "location": "Saggart, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,650",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/swift/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::an-tobar-letteragh-road-rahoon-galway": {
     "id": "affordablehomes::an-tobar-letteragh-road-rahoon-galway",
     "provider": "Affordable Homes IE",
@@ -12,6 +27,21 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/tobar/",
+    "raw_status": "Applications Open"
+  },
+  "affordablehomes::the-furrows-ratoath-co-meath": {
+    "id": "affordablehomes::the-furrows-ratoath-co-meath",
+    "provider": "Affordable Homes IE",
+    "name": "The Furrows, Ratoath, Co. Meath",
+    "location": "Ratoath, Co. Meath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,150",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/furrows/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::folkstown-park-balbriggan-co-dublin-phase-2": {
@@ -44,21 +74,6 @@
     "apply_url": "https://affordablehomes.ie/rent/cornmaddy/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::ballycomyn-blessington": {
-    "id": "affordablehomes::ballycomyn-blessington",
-    "provider": "Affordable Homes IE",
-    "name": "Ballycomyn, Blessington",
-    "location": "Blessington, Co. Wicklow",
-    "county": "Wicklow",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,087",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/blessingtondemesne/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::the-paddocks": {
     "id": "affordablehomes::the-paddocks",
     "provider": "Affordable Homes IE",
@@ -73,20 +88,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::the-furrows-ratoath-co-meath": {
-    "id": "affordablehomes::the-furrows-ratoath-co-meath",
-    "provider": "Affordable Homes IE",
-    "name": "The Furrows, Ratoath, Co. Meath",
-    "location": "Ratoath, Co. Meath",
-    "county": "Meath",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,150",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/furrows/",
-    "raw_status": "Coming Soon"
   }
 }
