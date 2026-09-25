@@ -119,6 +119,21 @@
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare": {
+    "id": "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare",
+    "provider": "Affordable Homes IE",
+    "name": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
+    "location": "Maynooth, Co. Kildare",
+    "county": "Kildare",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,425",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/grang/",
+    "raw_status": "Coming Soon"
+  },
   "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22": {
     "id": "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22",
     "provider": "Affordable Homes IE",
