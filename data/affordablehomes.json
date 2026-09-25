@@ -1,4 +1,19 @@
 {
+  "affordablehomes::deverdon-place": {
+    "id": "affordablehomes::deverdon-place",
+    "provider": "Affordable Homes IE",
+    "name": "DeVerdon Place",
+    "location": "Malahide Road, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,395",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/deverdonplace2/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::millers-glen-oldtown-swords-co-dublin": {
     "id": "affordablehomes::millers-glen-oldtown-swords-co-dublin",
     "provider": "Affordable Homes IE",
@@ -119,6 +134,21 @@
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::cluain-glasan-ayrefield-kilkenny": {
+    "id": "affordablehomes::cluain-glasan-ayrefield-kilkenny",
+    "provider": "Affordable Homes IE",
+    "name": "Cluain Glasan, Ayrefield, Kilkenny",
+    "location": "Kilkenny City, Co. Kilkenny",
+    "county": "Kilkenny",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,424",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/cluain/",
+    "raw_status": "Coming Soon"
+  },
   "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare": {
     "id": "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare",
     "provider": "Affordable Homes IE",
@@ -147,21 +177,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/cooper/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::deverdon-place": {
-    "id": "affordablehomes::deverdon-place",
-    "provider": "Affordable Homes IE",
-    "name": "DeVerdon Place",
-    "location": "Malahide Road, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/deverdonplace2/",
     "raw_status": "Coming Soon"
   }
 }
