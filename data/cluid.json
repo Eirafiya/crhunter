@@ -1,4 +1,34 @@
 {
+  "cluid::cluain-glasan": {
+    "id": "cluid::cluain-glasan",
+    "provider": "Cl\u00faid Housing",
+    "name": "Cluain Glasan",
+    "location": "Granges Road, Kilkenny",
+    "county": "Kilkenny",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/cluain-glasan-sept26/",
+    "raw_status": "Applications open"
+  },
+  "cluid::the-grange-phase-2": {
+    "id": "cluid::the-grange-phase-2",
+    "provider": "Cl\u00faid Housing",
+    "name": "The Grange Phase 2",
+    "location": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
+    "county": "Kildare",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/the-grange-phase-2/",
+    "raw_status": "Applications open"
+  },
   "cluid::the-willows": {
     "id": "cluid::the-willows",
     "provider": "Cl\u00faid Housing",

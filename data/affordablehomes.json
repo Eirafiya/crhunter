@@ -1,4 +1,34 @@
 {
+  "affordablehomes::cluain-glasan-ayrefield-kilkenny": {
+    "id": "affordablehomes::cluain-glasan-ayrefield-kilkenny",
+    "provider": "Affordable Homes IE",
+    "name": "Cluain Glasan, Ayrefield, Kilkenny",
+    "location": "Kilkenny City, Co. Kilkenny",
+    "county": "Kilkenny",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,424",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/cluain/",
+    "raw_status": "Applications Open"
+  },
+  "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare": {
+    "id": "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare",
+    "provider": "Affordable Homes IE",
+    "name": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
+    "location": "Maynooth, Co. Kildare",
+    "county": "Kildare",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,425",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/grang/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::deverdon-place": {
     "id": "affordablehomes::deverdon-place",
     "provider": "Affordable Homes IE",
@@ -27,21 +57,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/millers/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::the-willows-dunshaughlin-co-meath": {
-    "id": "affordablehomes::the-willows-dunshaughlin-co-meath",
-    "provider": "Affordable Homes IE",
-    "name": "The Willows, Dunshaughlin, Co. Meath",
-    "location": "Dunshaughlin, Co. Meath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,313",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/willows/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::longview-whites-cross-cork-city": {
@@ -117,36 +132,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::cluain-glasan-ayrefield-kilkenny": {
-    "id": "affordablehomes::cluain-glasan-ayrefield-kilkenny",
-    "provider": "Affordable Homes IE",
-    "name": "Cluain Glasan, Ayrefield, Kilkenny",
-    "location": "Kilkenny City, Co. Kilkenny",
-    "county": "Kilkenny",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,424",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/cluain/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare": {
-    "id": "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare",
-    "provider": "Affordable Homes IE",
-    "name": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
-    "location": "Maynooth, Co. Kildare",
-    "county": "Kildare",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,425",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/grang/",
     "raw_status": "Coming Soon"
   },
   "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22": {
