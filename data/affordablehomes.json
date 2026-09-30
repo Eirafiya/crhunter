@@ -1,4 +1,19 @@
 {
+  "affordablehomes::bennetstown": {
+    "id": "affordablehomes::bennetstown",
+    "provider": "Affordable Homes IE",
+    "name": "Bennetstown",
+    "location": "Dunboyne, Co. Meath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,495",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::cluain-glasan-ayrefield-kilkenny": {
     "id": "affordablehomes::cluain-glasan-ayrefield-kilkenny",
     "provider": "Affordable Homes IE",
@@ -59,21 +74,6 @@
     "apply_url": "https://affordablehomes.ie/rent/millers/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::longview-whites-cross-cork-city": {
-    "id": "affordablehomes::longview-whites-cross-cork-city",
-    "provider": "Affordable Homes IE",
-    "name": "Longview, Whites Cross, Cork City",
-    "location": "Longview, Co. Cork",
-    "county": "Cork",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,455",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/long/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::the-furrows-ratoath-co-meath": {
     "id": "affordablehomes::the-furrows-ratoath-co-meath",
     "provider": "Affordable Homes IE",
@@ -118,21 +118,6 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::bennetstown": {
-    "id": "affordablehomes::bennetstown",
-    "provider": "Affordable Homes IE",
-    "name": "Bennetstown",
-    "location": "Dunboyne, Co. Meath",
-    "county": "Meath",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,495",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
-    "raw_status": "Coming Soon"
   },
   "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22": {
     "id": "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22",
