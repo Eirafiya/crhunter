@@ -1,4 +1,34 @@
 {
+  "cluid::ard-na-saili": {
+    "id": "cluid::ard-na-saili",
+    "provider": "Cl\u00faid Housing",
+    "name": "Ard na Saili",
+    "location": "Ard na Sail\u00ed, Carrigtwohill, Co. Cork",
+    "county": "Cork",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/ard-na-saili/",
+    "raw_status": "Applications open"
+  },
+  "cluid::woodstream": {
+    "id": "cluid::woodstream",
+    "provider": "Cl\u00faid Housing",
+    "name": "Woodstream",
+    "location": "Woodstream, Ballis, Navan, Co. Meath",
+    "county": "Meath",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/woodstream-oct26/",
+    "raw_status": "Applications open"
+  },
   "cluid::cluain-glasan": {
     "id": "cluid::cluain-glasan",
     "provider": "Cl\u00faid Housing",
