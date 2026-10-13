@@ -134,10 +134,10 @@
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::harmen-s-rest-turvey-avenue-donabate": {
-    "id": "affordablehomes::harmen-s-rest-turvey-avenue-donabate",
+  "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
+    "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
     "provider": "Affordable Homes IE",
-    "name": "Harmen\u2019s Rest, Turvey Avenue, Donabate",
+    "name": "Harman\u2019s Rest, Turvey Avenue, Donabate",
     "location": "Donabate, Co. Dublin",
     "county": "Dublin",
     "status": "coming_soon",
