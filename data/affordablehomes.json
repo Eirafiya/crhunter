@@ -1,4 +1,19 @@
 {
+  "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
+    "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
+    "provider": "Affordable Homes IE",
+    "name": "Harman\u2019s Rest, Turvey Avenue, Donabate",
+    "location": "Donabate, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,509",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/harmen/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::furzefield": {
     "id": "affordablehomes::furzefield",
     "provider": "Affordable Homes IE",
@@ -133,20 +148,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
-    "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
-    "provider": "Affordable Homes IE",
-    "name": "Harman\u2019s Rest, Turvey Avenue, Donabate",
-    "location": "Donabate, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,509",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/harmen/",
-    "raw_status": "Coming Soon"
   }
 }
