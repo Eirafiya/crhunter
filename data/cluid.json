@@ -13,35 +13,5 @@
     "applications_close": null,
     "apply_url": "https://www.cluid.ie/property/ard-na-saili/",
     "raw_status": "Applications open"
-  },
-  "cluid::woodstream": {
-    "id": "cluid::woodstream",
-    "provider": "Cl\u00faid Housing",
-    "name": "Woodstream",
-    "location": "Woodstream, Ballis, Navan, Co. Meath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": null,
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://www.cluid.ie/property/woodstream-oct26/",
-    "raw_status": "Applications open"
-  },
-  "cluid::the-grange-phase-2": {
-    "id": "cluid::the-grange-phase-2",
-    "provider": "Cl\u00faid Housing",
-    "name": "The Grange Phase 2",
-    "location": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
-    "county": "Kildare",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": null,
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://www.cluid.ie/property/the-grange-phase-2/",
-    "raw_status": "Applications open"
   }
 }

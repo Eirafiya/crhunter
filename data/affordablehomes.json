@@ -1,4 +1,19 @@
 {
+  "affordablehomes::griffin-point-hole-in-the-wall-road-dublin-13": {
+    "id": "affordablehomes::griffin-point-hole-in-the-wall-road-dublin-13",
+    "provider": "Affordable Homes IE",
+    "name": "Griffin Point, Hole in the Wall Road, Dublin 13",
+    "location": "Dublin 13, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac146,250",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/griffin/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
     "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
     "provider": "Affordable Homes IE",
@@ -29,21 +44,6 @@
     "apply_url": "https://affordablehomes.ie/rent/furzefield/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::woodstream": {
-    "id": "affordablehomes::woodstream",
-    "provider": "Affordable Homes IE",
-    "name": "Woodstream",
-    "location": "Ballis, Navan, Co. Meath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,452",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/woodstream1/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::ard-na-sail": {
     "id": "affordablehomes::ard-na-sail",
     "provider": "Affordable Homes IE",
@@ -72,66 +72,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::cluain-glasan-ayrefield-kilkenny": {
-    "id": "affordablehomes::cluain-glasan-ayrefield-kilkenny",
-    "provider": "Affordable Homes IE",
-    "name": "Cluain Glasan, Ayrefield, Kilkenny",
-    "location": "Kilkenny City, Co. Kilkenny",
-    "county": "Kilkenny",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,424",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/cluain/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare": {
-    "id": "affordablehomes::the-grange-celbridge-road-maynooth-co-kildare",
-    "provider": "Affordable Homes IE",
-    "name": "The Grange, Celbridge Road, Maynooth, Co. Kildare",
-    "location": "Maynooth, Co. Kildare",
-    "county": "Kildare",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,425",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/grang/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22": {
-    "id": "affordablehomes::cooper-square-seven-mills-clonburris-dublin-22",
-    "provider": "Affordable Homes IE",
-    "name": "Cooper Square, Seven Mills, Clonburris, Dublin 22",
-    "location": "Clonburris, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/cooper/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::the-furrows-ratoath-co-meath": {
-    "id": "affordablehomes::the-furrows-ratoath-co-meath",
-    "provider": "Affordable Homes IE",
-    "name": "The Furrows, Ratoath, Co. Meath",
-    "location": "Ratoath, Co. Meath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,150",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/furrows/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::the-paddocks": {
