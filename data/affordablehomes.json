@@ -1,19 +1,4 @@
 {
-  "affordablehomes::griffin-point-hole-in-the-wall-road-dublin-13": {
-    "id": "affordablehomes::griffin-point-hole-in-the-wall-road-dublin-13",
-    "provider": "Affordable Homes IE",
-    "name": "Griffin Point, Hole in the Wall Road, Dublin 13",
-    "location": "Dublin 13, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac146,250",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/griffin/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
     "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
     "provider": "Affordable Homes IE",
@@ -73,5 +58,20 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
     "raw_status": "Applications Open"
+  },
+  "affordablehomes::the-sidings-adamstown": {
+    "id": "affordablehomes::the-sidings-adamstown",
+    "provider": "Affordable Homes IE",
+    "name": "The Sidings, Adamstown",
+    "location": "Adamstown, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,525",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/sidings/",
+    "raw_status": "Coming Soon"
   }
 }
