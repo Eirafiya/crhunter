@@ -14,6 +14,21 @@
     "apply_url": "https://affordablehomes.ie/rent/woodbrook1/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::the-sidings-adamstown": {
+    "id": "affordablehomes::the-sidings-adamstown",
+    "provider": "Affordable Homes IE",
+    "name": "The Sidings, Adamstown",
+    "location": "Adamstown, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,525",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/sidings/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
     "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
     "provider": "Affordable Homes IE",
@@ -74,6 +89,21 @@
     "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
+    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
+    "provider": "Affordable Homes IE",
+    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
+    "location": "Clondalkin, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,799",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilcarberygrange3/",
+    "raw_status": "Coming Soon"
+  },
   "affordablehomes::whitehaven-northwood-santry": {
     "id": "affordablehomes::whitehaven-northwood-santry",
     "provider": "Affordable Homes IE",
@@ -87,21 +117,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/whitehave/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::the-sidings-adamstown": {
-    "id": "affordablehomes::the-sidings-adamstown",
-    "provider": "Affordable Homes IE",
-    "name": "The Sidings, Adamstown",
-    "location": "Adamstown, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,525",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/sidings/",
     "raw_status": "Coming Soon"
   }
 }
