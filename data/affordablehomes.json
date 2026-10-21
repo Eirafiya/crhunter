@@ -1,4 +1,34 @@
 {
+  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
+    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
+    "provider": "Affordable Homes IE",
+    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
+    "location": "Clondalkin, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,799",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/kilcarberygrange3/",
+    "raw_status": "Applications Open"
+  },
+  "affordablehomes::whitehaven-northwood-santry": {
+    "id": "affordablehomes::whitehaven-northwood-santry",
+    "provider": "Affordable Homes IE",
+    "name": "Whitehaven, Northwood, Santry",
+    "location": "Santry, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,697",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/whitehave/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::woodbrook": {
     "id": "affordablehomes::woodbrook",
     "provider": "Affordable Homes IE",
@@ -59,21 +89,6 @@
     "apply_url": "https://affordablehomes.ie/rent/furzefield/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::ard-na-sail": {
-    "id": "affordablehomes::ard-na-sail",
-    "provider": "Affordable Homes IE",
-    "name": "Ard na Sail\u00ed",
-    "location": "Carrigtwohill, Co. Cork",
-    "county": "Cork",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,200",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/ardnasaili/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::bennetstown": {
     "id": "affordablehomes::bennetstown",
     "provider": "Affordable Homes IE",
@@ -88,35 +103,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
-    "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
-    "provider": "Affordable Homes IE",
-    "name": "Kilcarbery Grange, Clondalkin, Dublin 22",
-    "location": "Clondalkin, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,799",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilcarberygrange3/",
-    "raw_status": "Coming Soon"
-  },
-  "affordablehomes::whitehaven-northwood-santry": {
-    "id": "affordablehomes::whitehaven-northwood-santry",
-    "provider": "Affordable Homes IE",
-    "name": "Whitehaven, Northwood, Santry",
-    "location": "Santry, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,697",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/whitehave/",
-    "raw_status": "Coming Soon"
   }
 }
