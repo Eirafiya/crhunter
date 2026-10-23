@@ -88,20 +88,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/furzefield/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::bennetstown": {
-    "id": "affordablehomes::bennetstown",
-    "provider": "Affordable Homes IE",
-    "name": "Bennetstown",
-    "location": "Dunboyne, Co. Meath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,495",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/bennetstown/",
-    "raw_status": "Applications Open"
   }
 }
