@@ -1,4 +1,19 @@
 {
+  "affordablehomes::horgan-s-quay": {
+    "id": "affordablehomes::horgan-s-quay",
+    "provider": "Affordable Homes IE",
+    "name": "Horgan\u2019s Quay",
+    "location": "Cork City, Co. Cork",
+    "county": "Cork",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,395",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/horgansquay/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::kilcarbery-grange-clondalkin-dublin-22": {
     "id": "affordablehomes::kilcarbery-grange-clondalkin-dublin-22",
     "provider": "Affordable Homes IE",
@@ -27,21 +42,6 @@
     "applications_open": null,
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/whitehave/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::woodbrook": {
-    "id": "affordablehomes::woodbrook",
-    "provider": "Affordable Homes IE",
-    "name": "Woodbrook",
-    "location": "Shankill, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,495",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/woodbrook1/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::the-sidings-adamstown": {
@@ -73,20 +73,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/harmen/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::horgan-s-quay": {
-    "id": "affordablehomes::horgan-s-quay",
-    "provider": "Affordable Homes IE",
-    "name": "Horgan\u2019s Quay",
-    "location": "Cork City, Co. Cork",
-    "county": "Cork",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/horgansquay/",
-    "raw_status": "Coming Soon"
   }
 }
