@@ -13,35 +13,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/horgansquay/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::the-sidings-adamstown": {
-    "id": "affordablehomes::the-sidings-adamstown",
-    "provider": "Affordable Homes IE",
-    "name": "The Sidings, Adamstown",
-    "location": "Adamstown, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,525",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/sidings/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::harman-s-rest-turvey-avenue-donabate": {
-    "id": "affordablehomes::harman-s-rest-turvey-avenue-donabate",
-    "provider": "Affordable Homes IE",
-    "name": "Harman\u2019s Rest, Turvey Avenue, Donabate",
-    "location": "Donabate, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,509",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/harmen/",
-    "raw_status": "Applications Open"
   }
 }
