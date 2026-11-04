@@ -1,1 +1,32 @@
-{}
+{
+  "cluid::amharc-abhann": {
+    "id": "cluid::amharc-abhann",
+    "provider": "Cl\u00faid Housing",
+    "name": "Amharc Abhann",
+    "location": "Amharc Abhann, Knockhill, Limerick",
+    "county": "Limerick",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/amharc-abhann/",
+    "raw_status": "Applications open"
+  },
+  "cluid::exchange-square": {
+    "id": "cluid::exchange-square",
+    "provider": "Cl\u00faid Housing",
+    "name": "Exchange Square",
+    "location": "Exchange Square, Seven Mills, Dublin 22",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/exchange-square/",
+    "raw_status": "Applications open"
+  }
+}
