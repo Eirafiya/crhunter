@@ -1,4 +1,19 @@
 {
+  "affordablehomes::carrigmore-woods-citywest-dublin-24": {
+    "id": "affordablehomes::carrigmore-woods-citywest-dublin-24",
+    "provider": "Affordable Homes IE",
+    "name": "Carrigmore Woods, Citywest, Dublin 24",
+    "location": "Citywest, Co. Dublin",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,395",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/carrigmore/",
+    "raw_status": "Applications Open"
+  },
   "affordablehomes::exchange-square-seven-mills-dublin-22": {
     "id": "affordablehomes::exchange-square-seven-mills-dublin-22",
     "provider": "Affordable Homes IE",
@@ -58,20 +73,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/coolevally2/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::carrigmore-woods-citywest-dublin-24": {
-    "id": "affordablehomes::carrigmore-woods-citywest-dublin-24",
-    "provider": "Affordable Homes IE",
-    "name": "Carrigmore Woods, Citywest, Dublin 24",
-    "location": "Citywest, Co. Dublin",
-    "county": "Dublin",
-    "status": "coming_soon",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/carrigmore/",
-    "raw_status": "Coming Soon"
   }
 }
