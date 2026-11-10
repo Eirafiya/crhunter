@@ -43,20 +43,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/amharc/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::woodside-rise": {
-    "id": "affordablehomes::woodside-rise",
-    "provider": "Affordable Homes IE",
-    "name": "Woodside Rise",
-    "location": "Enniskerry, Dublin 18, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,257",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/woodsiderise2/",
-    "raw_status": "Applications Open"
   }
 }
