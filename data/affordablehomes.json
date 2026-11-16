@@ -1,17 +1,17 @@
 {
-  "affordablehomes::carrigmore-woods-citywest-dublin-24": {
-    "id": "affordablehomes::carrigmore-woods-citywest-dublin-24",
+  "affordablehomes::deverdon-place": {
+    "id": "affordablehomes::deverdon-place",
     "provider": "Affordable Homes IE",
-    "name": "Carrigmore Woods, Citywest, Dublin 24",
-    "location": "Citywest, Co. Dublin",
+    "name": "DeVerdon Place",
+    "location": "Malahide Road, Co. Dublin",
     "county": "Dublin",
     "status": "open",
     "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,395",
+    "price_from": "Prices starting from \u20ac1,695",
     "units_available": null,
     "applications_open": null,
     "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/carrigmore/",
+    "apply_url": "https://affordablehomes.ie/rent/deverdonplace5/",
     "raw_status": "Applications Open"
   },
   "affordablehomes::exchange-square-seven-mills-dublin-22": {
