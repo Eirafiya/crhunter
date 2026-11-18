@@ -74,6 +74,36 @@
     "apply_url": "https://affordablehomes.ie/rent/amharc/",
     "raw_status": "Applications Open"
   },
+  "affordablehomes::ferrard-court": {
+    "id": "affordablehomes::ferrard-court",
+    "provider": "Affordable Homes IE",
+    "name": "Ferrard Court",
+    "location": "Drogheda, Co. Louth",
+    "county": "Louth",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,150",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/ferrardcourt/",
+    "raw_status": "Coming Soon"
+  },
+  "affordablehomes::the-paddocks": {
+    "id": "affordablehomes::the-paddocks",
+    "provider": "Affordable Homes IE",
+    "name": "The Paddocks",
+    "location": "Skerries, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,300",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/thepaddocks1/",
+    "raw_status": "Coming Soon"
+  },
   "affordablehomes::35-36-park-street": {
     "id": "affordablehomes::35-36-park-street",
     "provider": "Affordable Homes IE",
