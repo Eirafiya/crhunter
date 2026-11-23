@@ -103,35 +103,5 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks1/",
     "raw_status": "Applications Open"
-  },
-  "affordablehomes::kilternan-woods-kilternan-dublin-18": {
-    "id": "affordablehomes::kilternan-woods-kilternan-dublin-18",
-    "provider": "Affordable Homes IE",
-    "name": "Kilternan Woods, Kilternan, Dublin 18",
-    "location": "Kilternan, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,474",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/kilter/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::montpelier": {
-    "id": "affordablehomes::montpelier",
-    "provider": "Affordable Homes IE",
-    "name": "Montpelier",
-    "location": "Dublin 7, Co. Dublin",
-    "county": "Dublin",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,695",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/montpelier2/",
-    "raw_status": "Applications Open"
   }
 }
