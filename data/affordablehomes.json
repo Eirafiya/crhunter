@@ -103,5 +103,20 @@
     "applications_close": null,
     "apply_url": "https://affordablehomes.ie/rent/thepaddocks1/",
     "raw_status": "Applications Open"
+  },
+  "affordablehomes::oscar-traynor-woods-coolock-lane-coolock-dublin-17": {
+    "id": "affordablehomes::oscar-traynor-woods-coolock-lane-coolock-dublin-17",
+    "provider": "Affordable Homes IE",
+    "name": "Oscar Traynor Woods, Coolock Lane, Coolock, Dublin 17",
+    "location": "Dublin 17, Co. Dublin",
+    "county": "Dublin",
+    "status": "coming_soon",
+    "bedrooms": [],
+    "price_from": "Prices starting from \u20ac1,245",
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://affordablehomes.ie/rent/oscar/",
+    "raw_status": "Coming Soon"
   }
 }
