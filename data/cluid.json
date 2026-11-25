@@ -1,4 +1,19 @@
 {
+  "cluid::oscar-traynor-woods-phase-two": {
+    "id": "cluid::oscar-traynor-woods-phase-two",
+    "provider": "Cl\u00faid Housing",
+    "name": "Oscar Traynor Woods \u2013 Phase Two",
+    "location": "Coolock Lane, Coolock, Dublin 17",
+    "county": "Dublin",
+    "status": "open",
+    "bedrooms": [],
+    "price_from": null,
+    "units_available": null,
+    "applications_open": null,
+    "applications_close": null,
+    "apply_url": "https://www.cluid.ie/property/oscar-traynor-woods-phase-two/",
+    "raw_status": "Applications open"
+  },
   "cluid::stoneview": {
     "id": "cluid::stoneview",
     "provider": "Cl\u00faid Housing",
