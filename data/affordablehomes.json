@@ -59,36 +59,6 @@
     "apply_url": "https://affordablehomes.ie/rent/oscar/",
     "raw_status": "Applications Open"
   },
-  "affordablehomes::farranshock-park-mullingar-co-westmeath": {
-    "id": "affordablehomes::farranshock-park-mullingar-co-westmeath",
-    "provider": "Affordable Homes IE",
-    "name": "Farranshock Park, Mullingar, Co. Westmeath",
-    "location": "Mullingar, Co. Westmeath",
-    "county": "Meath",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,290",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/farran/",
-    "raw_status": "Applications Open"
-  },
-  "affordablehomes::walker-s-gate-kildare-town-co-kildare": {
-    "id": "affordablehomes::walker-s-gate-kildare-town-co-kildare",
-    "provider": "Affordable Homes IE",
-    "name": "Walker\u2019s Gate, Kildare Town, Co. Kildare",
-    "location": "Kildare Town, Co. Kildare",
-    "county": "Kildare",
-    "status": "open",
-    "bedrooms": [],
-    "price_from": "Prices starting from \u20ac1,306",
-    "units_available": null,
-    "applications_open": null,
-    "applications_close": null,
-    "apply_url": "https://affordablehomes.ie/rent/walk/",
-    "raw_status": "Applications Open"
-  },
   "affordablehomes::35-36-park-street": {
     "id": "affordablehomes::35-36-park-street",
     "provider": "Affordable Homes IE",
